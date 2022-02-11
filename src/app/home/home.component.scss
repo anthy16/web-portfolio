@@ -1,0 +1,18 @@
+@import '../shared/styles/index.scss';
+
+.home {
+  &__row {
+    display: flex;
+  }
+
+  &__column {
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+
+  &__full-width {
+    display: flex;
+    flex: 1;
+  }
+}

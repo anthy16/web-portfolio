@@ -1,0 +1,20 @@
+@import '../../shared/styles/index.scss';
+
+.avatar {
+  &__title {
+    color: white;
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  &__image-container {
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    image-rendering: pixelated;
+    filter: grayscale(1);
+  }
+}

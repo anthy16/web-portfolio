@@ -1,0 +1,36 @@
+@import '../../shared/styles/index.scss';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  flex: 1;
+
+  .title {
+    font-size: 22px;
+  }
+
+  .link {
+    margin-left: 5px;
+  }
+
+  &__title-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-bottom: 5px;
+  }
+}

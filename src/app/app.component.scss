@@ -1,0 +1,12 @@
+@import './shared/styles/index.scss';
+
+.app {
+  display: flex;
+  background-color: var(--background);
+  height: 100%;
+
+  &__container {
+    padding: 20px;
+    flex: 1;
+  }
+}
