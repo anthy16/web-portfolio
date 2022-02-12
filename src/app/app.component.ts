@@ -20,7 +20,7 @@ export class AppComponent implements OnInit, OnDestroy {
       if (event instanceof NavigationEnd) {
         this.route = event.url.split('/')[1];
         this.loading = true;
-        setTimeout(() => (this.loading = false), 1500);
+        setTimeout(() => (this.loading = false), 1000);
       }
     });
   }

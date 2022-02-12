@@ -1,0 +1,16 @@
+<section class="projects">
+  <div class="projects__description container__main">
+    <div class="title title--large">Personal Projects</div>
+    <div>
+      <p>Outside of my professional career, I sometimes work on various personal projects.</p>
+      <p>This is a list of some of my favourite projects!</p>
+    </div>
+  </div>
+  <div>
+    <app-project-description
+      *ngFor="let project of projects; let i = index"
+      [project]="project"
+      [imagePosition]="i % 2 ? right : left"
+    ></app-project-description>
+  </div>
+</section>

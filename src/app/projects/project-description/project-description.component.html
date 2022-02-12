@@ -1,0 +1,26 @@
+<div
+  *ngIf="project"
+  class="project-description"
+  [ngStyle]="{ 'flex-direction': imagePosition === left ? 'row' : 'row-reverse' }"
+>
+  <!-- Image -->
+  <div class="container__main project-description__image-container">
+    <div class="container__header title__header">{{ imageName | lowercase }}</div>
+    <div class="container__inset">
+      <img class="project-description__image" [src]="project.src" />
+    </div>
+  </div>
+
+  <div class="project-description__spacer"></div>
+
+  <!-- Description field -->
+  <div class="container__main project-description__description">
+    <span class="title">{{ project.title }}</span>
+    <div>
+      <p *ngFor="let line of project.description">{{ line }}</p>
+    </div>
+    <span
+      ><b>LINK: </b> <a [href]="project.link" target="_blank">{{ project.link }}</a></span
+    >
+  </div>
+</div>
