@@ -4,15 +4,32 @@
   &__row {
     display: flex;
     margin-bottom: 20px;
+
+    &--inner {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__column {
     &:first-child {
       margin-right: 15px;
     }
+
+    &--inner {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__full-width {
+    display: flex;
+    flex: 1;
+  }
+
+  &__full-height {
     display: flex;
     flex: 1;
   }

@@ -1,0 +1,38 @@
+@import '../../shared/styles/index.scss';
+
+.skills {
+  width: 100%;
+
+  &__content {
+    padding: 10px;
+  }
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__skill {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__progress-container {
+    height: 20px;
+  }
+
+  &__progress {
+    background-color: var(--accent);
+    height: calc(100% - 1px);
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+
+  &__progress-text {
+    color: var(--main-3);
+    padding-left: 3px;
+    padding-top: 3px;
+    font-weight: 400;
+  }
+}
