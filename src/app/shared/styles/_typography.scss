@@ -5,6 +5,15 @@
     font-weight: 400;
     font-size: 12px;
   }
+
+  &__header {
+    color: var(--main-3);
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
 }
 
 .link {
