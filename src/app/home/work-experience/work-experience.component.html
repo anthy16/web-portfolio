@@ -1,0 +1,24 @@
+<section class="work-experience container__main">
+  <div>
+    <div class="work-experience__title">
+      <span class="title">Work Experience</span>
+    </div>
+  </div>
+  <div class="container__inset">
+    <div *ngFor="let element of workExperience" class="work-experience__experience">
+      <div class="work-experience__experience-summary">
+        <span class="work-experience__company">{{ element.company }}</span>
+        <span>
+          <b>{{ element.title }}</b>
+        </span>
+        <span class="work-experience__duration">{{ element.start }} - {{ element.stop }}</span>
+
+        <span class="work-experience__technologies">Technologies</span>
+        <span *ngFor="let tech of element.technologies" class="work-experience__technology">{{ tech }}</span>
+      </div>
+      <div class="work-experience__description">
+        <p *ngFor="let line of element.description">{{ line }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,6 +1,10 @@
 @import '../../shared/styles/index.scss';
 
 .avatar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   &__title {
     color: white;
     font-weight: 300;
@@ -11,9 +15,10 @@
   }
 
   &__image-container {
-    padding: 11px;
     display: flex;
+    flex: 1;
     justify-content: center;
+    align-items: center;
     image-rendering: pixelated;
     filter: grayscale(1);
   }
