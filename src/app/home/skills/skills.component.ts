@@ -14,7 +14,10 @@ export class SkillsComponent implements OnInit {
     { title: 'Git', level: 100 },
     { title: 'JQuery', level: 80 },
     { title: 'GraphQL', level: 60 },
-    { title: 'Azure', level: 90 }
+    { title: 'Azure', level: 90 },
+    { title: 'DevOps', level: 100 },
+    { title: 'Agile methodologies', level: 100 },
+    { title: 'Javascript / TypeScript', level: 100 }
   ];
 
   constructor() {}

@@ -4,9 +4,11 @@
   display: flex;
   background-color: var(--background);
   height: 100%;
+  justify-content: center;
 
   &__container {
     padding: 20px;
     flex: 1;
+    max-width: 1280px;
   }
 }
