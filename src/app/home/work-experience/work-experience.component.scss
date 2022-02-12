@@ -25,12 +25,21 @@
     margin-bottom: 10px;
     border: 1px solid var(--main-1);
     padding: 5px;
+
+    @include respond-to('md') {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__experience-summary {
     display: flex;
     flex-direction: column;
     min-width: 250px;
+
+    @include respond-to('lg') {
+      margin-bottom: 5px;
+    }
   }
 
   &__company {

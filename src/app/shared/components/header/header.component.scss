@@ -7,6 +7,12 @@
   align-items: center;
   overflow: hidden;
 
+  .title__flavor {
+    @include respond-to('md') {
+      font-size: 10px;
+    }
+  }
+
   &__page-title {
     flex: 1;
     height: 100%;

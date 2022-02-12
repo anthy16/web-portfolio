@@ -4,18 +4,39 @@
   display: flex;
   margin-bottom: 20px;
 
+  @include respond-to('lg') {
+    flex-direction: column !important;
+  }
+
+  &__right-position {
+    flex-direction: row-reverse;
+  }
+
   &__spacer {
     width: 15px;
+
+    @include respond-to('lg') {
+      height: 20px;
+    }
   }
 
   &__image-container {
     flex: 0.3;
   }
 
+  &__image-center {
+    display: flex;
+    justify-content: center;
+  }
+
   &__image {
     image-rendering: pixelated;
     filter: grayscale(1);
     max-width: 400px;
+
+    @include respond-to('md') {
+      max-width: 90%;
+    }
   }
 
   &__description {

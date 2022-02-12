@@ -6,6 +6,10 @@
   padding: 10px 15px;
   flex: 1;
 
+  @include respond-to('md') {
+    text-align: center;
+  }
+
   .link {
     margin-left: 5px;
   }
@@ -14,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+
+    @include respond-to('md') {
+      flex-direction: column;
+    }
   }
 
   &__title {

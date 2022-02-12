@@ -1,12 +1,12 @@
 <div
   *ngIf="project"
   class="project-description"
-  [ngStyle]="{ 'flex-direction': imagePosition === left ? 'row' : 'row-reverse' }"
+  [ngClass]="{ 'project-description__right-position': imagePosition === right }"
 >
   <!-- Image -->
   <div class="container__main project-description__image-container">
     <div class="container__header title__header">{{ imageName | lowercase }}</div>
-    <div class="container__inset">
+    <div class="container__inset project-description__image-center">
       <img class="project-description__image" [src]="project.src" />
     </div>
   </div>
