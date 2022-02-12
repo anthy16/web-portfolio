@@ -1,0 +1,13 @@
+@import '../../shared/styles/index.scss';
+
+.map {
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      filter: grayscale(1);
+      max-width: 90%;
+    }
+  }
+}

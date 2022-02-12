@@ -8,16 +8,13 @@
 
     <!-- SoMe -->
     <div class="about__social-media">
-      <a class="about__text link" href="https://www.linkedin.com/in/anders-kirsby-thygesen/" target="_blank"
-        >https://www.linkedin.com/in/anders-kirsby-thygesen/</a
-      >
-      <a class="about__text link" href="https://github.com/anthy16" target="_blank">https://github.com/anthy16</a>
+      <a class="about__text link" [href]="linkedIn">{{ linkedIn }}</a>
+      <a class="about__text link" [href]="gitHub">{{ gitHub }}</a>
     </div>
   </div>
   <span class="about__text"
-    ><b>EMAIL:</b> <a class="link" href="mailto:anderskirsby@gmail.com">anderskirsby@gmail.com</a></span
+    ><b>EMAIL:</b> <a class="link" [href]="'mailto:' + email">{{ email }}</a></span
   >
-  <span class="about__text"><b>PHONE:</b> <a class="link" href="tel:+4542227685">(+45) 4222 7685</a></span>
   <div>
     <p>
       I crave challenge and I do not fear change. New perspectives are always welcome. As Astrid Lindgren's character

@@ -2,12 +2,12 @@
   <!-- Page Title -->
   <div class="header__page-title container__main--inner">
     <span class="title__flavor">Kirsby 98</span>
-    <span class="title">Home</span>
+    <span class="title">{{ route | titlecase }}</span>
   </div>
 
   <!-- Navbar -->
   <nav class="header__nav">
-    <div class="header__nav-item container__main--inner">Home</div>
-    <div class="header__nav-item container__main--inner">Contact</div>
+    <div class="header__nav-item container__main--inner" routerLink="home">Home</div>
+    <div class="header__nav-item container__main--inner" routerLink="contact">Contact</div>
   </nav>
 </header>
