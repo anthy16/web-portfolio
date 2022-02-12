@@ -1,7 +1,14 @@
 <div class="app">
   <div class="app__container">
-    <app-header></app-header>
-    <router-outlet></router-outlet>
+    <app-header [route]="route"></app-header>
+    <router-outlet *ngIf="!loading; else displayLoader"></router-outlet>
+
+    <ng-template #displayLoader>
+      <div class="app__centered-content">
+        <app-global-loader></app-global-loader>
+      </div>
+    </ng-template>
+
     <app-footer></app-footer>
   </div>
   <div class="crt-distortion"></div>

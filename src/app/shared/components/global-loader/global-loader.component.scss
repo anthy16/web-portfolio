@@ -1,0 +1,38 @@
+@import '../../styles/index.scss';
+
+.global-loader {
+  min-width: 300px;
+
+  &__content {
+    padding: 10px 15px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  &__progress-bar {
+    height: 20px;
+  }
+
+  &__progress {
+    background-color: var(--accent);
+    height: 100%;
+    animation: 1.5s choppy-load forwards;
+  }
+}
+
+@keyframes choppy-load {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 80%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

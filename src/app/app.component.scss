@@ -12,4 +12,12 @@
     flex: 1;
     max-width: 1280px;
   }
+
+  &__centered-content {
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
