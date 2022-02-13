@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subject, takeUntil } from 'rxjs';
+import { TitleService } from './shared/services/title.service';
 
 @Component({
   selector: 'app-root',
@@ -13,12 +14,15 @@ export class AppComponent implements OnInit, OnDestroy {
 
   destroy$: Subject<any> = new Subject();
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private titleService: TitleService) {}
 
   ngOnInit(): void {
     this.router.events.pipe(takeUntil(this.destroy$)).subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.route = event.url.split('/')[1];
+        const currentRouteName = event.urlAfterRedirects.split('/')[1];
+
+        this.route = currentRouteName;
+        this.titleService.setPageTitle(currentRouteName);
         this.loading = true;
         setTimeout(() => (this.loading = false), 1000);
       }
