@@ -1,6 +1,6 @@
 # WebPortfolio
 
-![Porfolio](https://github.com/anthy16/web-portfolio/blob/master/src/assets/readme-front.png)
+![Porfolio](https://raw.githubusercontent.com/anthy16/web-portfolio/main/src/assets/readme-front.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
