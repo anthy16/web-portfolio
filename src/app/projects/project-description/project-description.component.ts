@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { HorizontalPosition } from 'src/app/shared/constants/horizontal-position.constants';
-import { Project } from 'src/app/shared/models/project.model';
+import { HorizontalPosition } from '@constants/horizontal-position.constants';
+import { Project } from '@models/project.model';
 
 @Component({
   selector: 'app-project-description',

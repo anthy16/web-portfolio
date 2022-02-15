@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CONTACT_EMAIL } from 'src/app/shared/constants/contact.constants';
-import { GITHUB, LINKEDIN } from 'src/app/shared/constants/social-media.constants';
+import { CONTACT_EMAIL } from '@constants/contact.constants';
+import { GITHUB, LINKEDIN } from '@constants/social-media.constants';
 
 @Component({
   selector: 'app-about',
