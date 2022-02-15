@@ -2,28 +2,61 @@
 
 ![Porfolio](https://raw.githubusercontent.com/anthy16/web-portfolio/main/src/assets/readme-front.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
+This is a webpage built to display my personal portfolio, projects, and other things I might find relevant and/or fun. It is implemented in [Angular](https://angular.io/).
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Below is a quick walkthrough of how to set up the development environment, a summary of tooling used for the project, along with a guide on scripts and their actions.
 
-## Code scaffolding
+### How to Run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Clone**
 
-## Build
+```sh
+$ git clone https://github.com/anthy16/web-portfolio.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Install Dependencies**
 
-## Running unit tests
+```sh
+$ npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Run Application**
 
-## Running end-to-end tests
+```sh
+$ npm run start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Run Tests**
 
-## Further help
+```sh
+$ npm run test
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Tooling
+
+| Tool                            | Purpose                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Angular](https://angular.io)   | Base SPA framework used. Angular provides good tooling and a fast development environment. |
+| [Prettier](https://prettier.io) | Used to keep a consistent formatting style throughout the project.                         |
+| [Jest](https://jestjs.io)       | Provides (faster than Karma) unit testing capabilities and coverage reporting.             |
+
+### Scripts
+
+| Script name     | Description                                                                         |
+| --------------- | ----------------------------------------------------------------------------------- |
+| `build`         | Makes a build of the Angular application (uses default `development` configuration) |
+| `start`         | Runs the Angular development server (accessible from port `4200`)                   |
+| `test`          | Runs all Jest unit tests                                                            |
+| `test:coverage` | Runs all Jest unit tests and creates a coverage report                              |
+
+## Deployment
+
+WebPortfolio is hosted on [Netlify](https://www.netlify.com/) and is set to automatically build and publish when pushing to `main`.
+
+## Page Styling
+
+All styling on the page is largely inspired by Windows 98 - although it is far from 100% faithful to the design.
+
+I have used references such as [98.css](https://github.com/jdan/98.css) and [Browso](https://www.browso.app/).
