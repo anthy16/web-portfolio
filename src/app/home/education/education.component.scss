@@ -16,6 +16,10 @@
     opacity: 0.6;
     border-right: 1px solid var(--main-1);
     padding-right: 10px;
+
+    @include respond-to('md') {
+      align-self: center;
+    }
   }
 
   &__description {
