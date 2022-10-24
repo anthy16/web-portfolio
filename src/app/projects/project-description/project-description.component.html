@@ -19,8 +19,9 @@
     <div>
       <p *ngFor="let line of project.description">{{ line }}</p>
     </div>
-    <span
+    <span *ngIf="project.link"
       ><b>LINK: </b> <a [href]="project.link" target="_blank">{{ project.link }}</a></span
     >
+    <span *ngIf="project.cta"><b>LINK: </b> <i>Please request a demo</i></span>
   </div>
 </div>
