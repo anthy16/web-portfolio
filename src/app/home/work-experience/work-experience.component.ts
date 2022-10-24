@@ -8,6 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class WorkExperienceComponent implements OnInit {
   workExperience = [
     {
+      title: 'Lead Software Developer',
+      company: 'TimeXtender',
+      description: [
+        "Lead developer for the TimeXtender engineering circle. Responsible for TimeXtender's web application.",
+        'Working with a completely remote team, with full stack development in technologies such as Angular, C#/.NET and Azure.'
+      ],
+      start: 'march 2022',
+      stop: 'present',
+      coreTasks: ['Software Development', 'Team Lead'],
+      technologies: ['Angular', '.Net', 'Azure', 'Git', 'Azure DevOps']
+    },
+    {
       title: 'External Consultant - IT Lead',
       company: 'Bankdata',
       description: [
@@ -20,7 +32,7 @@ export class WorkExperienceComponent implements OnInit {
         '- Empowering and teaching the team'
       ],
       start: 'september 2021',
-      stop: 'present',
+      stop: 'march 2022',
       coreTasks: ['Software Development', 'Team Lead'],
       technologies: ['Angular', 'Java', 'Spring Boot', 'Jenkins', 'Git', 'Openshift']
     },
@@ -37,7 +49,7 @@ export class WorkExperienceComponent implements OnInit {
       technologies: ['Angular', 'C#', '.NET', 'Azure', 'Google Cloud', 'Git', 'DialogFlow', 'Github Actions']
     },
     {
-      title: 'Freelance Mobile Developer',
+      title: 'Freelance Developer',
       company: 'Karmarunner',
       description: ['App development in React Native with Expo and GraphQL.'],
       start: 'november 2019',
