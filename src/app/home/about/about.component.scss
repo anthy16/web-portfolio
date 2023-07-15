@@ -37,4 +37,13 @@
   &__text {
     margin-bottom: 5px;
   }
+
+  &__button-row {
+    display: flex;
+
+    a {
+      flex: 1;
+      margin: 0 5px;
+    }
+  }
 }

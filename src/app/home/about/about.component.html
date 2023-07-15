@@ -5,12 +5,6 @@
       <span class="title__flavor">About</span>
       <span class="title title--large">Anders Kirsby Thygesen</span>
     </div>
-
-    <!-- SoMe -->
-    <div class="about__social-media">
-      <a class="about__text link" [href]="linkedIn">{{ linkedIn }}</a>
-      <a class="about__text link" [href]="gitHub">{{ gitHub }}</a>
-    </div>
   </div>
   <span class="about__text"
     ><b>EMAIL:</b> <a class="link" [href]="'mailto:' + email">{{ email }}</a></span
@@ -30,5 +24,16 @@
       business side of things. This gives me an eagle eye perspective of the product journey, which helps me take more
       than just specialist requirements into consideration, when working on a project.
     </p>
+  </div>
+  <div class="about__button-row">
+    <a class="button__default" [href]="gitHub" target="_blank">
+      <img src="assets/github.png" height="25" />
+      My GitHub
+    </a>
+    <a class="button__default" [href]="linkedIn" target="_blank">
+      <img src="assets/linkedin.png" height="25" />
+      My LinkedIn
+    </a>
+    <a class="button__default" [href]="googleDrive" target="_blank">Download CV</a>
   </div>
 </section>

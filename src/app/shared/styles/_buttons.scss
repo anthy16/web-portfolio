@@ -1,0 +1,31 @@
+.button {
+  &__default {
+    background-color: var(--main-2);
+    border: 1px solid var(--main-1);
+    box-shadow: inset 1px 1px 0 0 #fff;
+    image-rendering: pixelated;
+    filter: grayscale(100%);
+    font-size: 16px;
+    font-family: Rubik;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      border-style: dashed;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+  }
+}
