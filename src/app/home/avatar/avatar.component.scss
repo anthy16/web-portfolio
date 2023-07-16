@@ -1,6 +1,8 @@
 @import '../../shared/styles/index.scss';
 
 .avatar {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   height: 100%;
