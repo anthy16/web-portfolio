@@ -41,9 +41,18 @@
   &__button-row {
     display: flex;
 
+    @include respond-to('md') {
+      flex-direction: column;
+    }
+
     a {
       flex: 1;
       margin: 0 5px;
+
+      @include respond-to('md') {
+        margin: 5px 0;
+        line-height: 40px;
+      }
     }
   }
 }
