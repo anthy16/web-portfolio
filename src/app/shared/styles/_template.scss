@@ -18,12 +18,82 @@
     padding: 11px;
     background-color: var(--main-3);
     box-shadow: inset 1px 0 0 0 #fff, inset 0 0 0 5px var(--main-2), inset 6px 6px 0 0 #4e5252;
+
+    &--no-highlight {
+      box-shadow: inset 0 0 0 5px var(--main-2), inset 6px 6px 0 0 #4e5252;
+    }
   }
 
   &__header {
     height: 25px;
     background-color: var(--accent);
     box-shadow: inset 1px 1px 0 0 #fff, inset 0 0 0 3px #c6cecf;
-    cursor: default;
+    cursor: grab;
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+
+.title-box {
+  &__container {
+    border: 1px solid var(--main-1);
+    margin: 10px;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    box-shadow: inset 1px 1px 0 0 #fff, 1px 1px 0 0 #fff;
+
+    p {
+      margin: 0;
+
+      &::first-letter {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    background-color: var(--main-2);
+    padding: 0 4px;
+  }
+}
+
+.tab-box {
+  &__content {
+    background-color: var(--main-2);
+    border: 1px solid var(--main-1);
+    box-shadow: inset 1px 1px 0 0 #fff;
+    position: relative;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__tab {
+    background-color: var(--main-2);
+    border: 1px solid var(--main-1);
+    border-left: none;
+    box-shadow: inset 1px 0px 0 0 var(--main-1), inset 0px 1px 0 0 #fff;
+    border-bottom: none;
+    padding: 5px;
+    max-width: 100px;
+    z-index: 0;
+    margin-top: 2px;
+    cursor: pointer;
+
+    &--active {
+      box-shadow: inset 1px 1px 0 0 #fff;
+      position: relative;
+      z-index: 999;
+      margin-bottom: -2px;
+      margin-top: 0;
+      border-left: 1px solid var(--main-1);
+      cursor: default;
+    }
   }
 }

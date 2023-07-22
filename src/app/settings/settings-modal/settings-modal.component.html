@@ -1,0 +1,44 @@
+<section class="container__main">
+  <div class="container__header title__header" cdkDrag cdkDragRootElement=".cdk-overlay-pane" cdkDragHandle>
+    Properties
+  </div>
+  <div class="settings-modal__content">
+    <div class="tab-box">
+      <div class="tab-box__nav">
+        <div class="tab-box__tab tab-box__tab--active">Background</div>
+      </div>
+      <div class="tab-box__content">
+        <div class="settings-modal__content">
+          <div class="container__main container__main--no-shadow settings-modal__background-view">
+            <div
+              class="container__main container__main--no-shadow settings-modal__background"
+              [ngStyle]="{
+                'background-color': activeBackground.color,
+                'background-image': 'url(' + activeBackground.url + ')'
+              }"
+            ></div>
+          </div>
+        </div>
+        <div class="title-box__container">
+          <div class="title-box__title">Wallpaper</div>
+          <p>Select an HTML Document or a picture:</p>
+          <div class="container__inset container__inset--no-highlight settings-modal__list">
+            <button
+              *ngFor="let background of backgrounds"
+              class="settings-modal__list-button"
+              [ngClass]="{ 'settings-modal__list-button--active': background.name === activeBackground.name }"
+              (click)="setActiveBackground(background)"
+            >
+              <img [src]="!background.url ? 'assets/icons/no.png' : 'assets/icons/background.png'" />
+              {{ background.name }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="settings-modal__button-row">
+    <button class="button__default">OK</button>
+    <button class="button__default" (click)="close()">Cancel</button>
+  </div>
+</section>

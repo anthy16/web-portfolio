@@ -1,9 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import './app/shared/styles/index.scss';
+@import '@angular/cdk/overlay-prebuilt.css';
 
 body,
 html {
   margin: 0;
   font-family: 'Rubik';
   min-height: 100vh;
+}
+
+cdk-dialog-container {
+  outline: none;
 }

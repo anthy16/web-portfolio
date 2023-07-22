@@ -1,0 +1,64 @@
+.settings-modal {
+  &__content {
+    padding: 10px;
+  }
+
+  &__background-view {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  &__background {
+    width: 50%;
+    height: 250px;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  &__button-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    button:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__list-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 1px 0;
+
+    &--active {
+      background-color: var(--accent);
+      color: var(--main-3);
+    }
+
+    img {
+      margin-right: 5px;
+      filter: grayscale(1);
+      image-rendering: pixelated;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+}

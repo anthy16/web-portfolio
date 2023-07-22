@@ -25,6 +25,16 @@
   &__nav {
     display: flex;
     height: 100%;
+
+    img {
+      image-rendering: pixelated;
+      filter: grayscale(1);
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px dashed var(--main-1);
+      }
+    }
   }
 
   &__nav-item {
