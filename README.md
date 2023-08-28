@@ -1,5 +1,7 @@
 # WebPortfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9126be93-e16b-4733-94cb-0418de9b7a9f/deploy-status)](https://app.netlify.com/sites/akthygesen/deploys)
+
 ![Porfolio](https://raw.githubusercontent.com/anthy16/web-portfolio/main/src/assets/readme-front.png)
 
 This is a webpage built to display my personal portfolio, projects, and other things I might find relevant and/or fun. It is implemented in [Angular](https://angular.io/).
