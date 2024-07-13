@@ -39,6 +39,16 @@ export class ProjectsComponent implements OnInit {
         'All of this is hosted on Azure.'
       ],
       cta: 'Please request a demo'
+    },
+    {
+      src: '/assets/projects/monnerdex.png',
+      title: 'MonnerDex',
+      description: [
+        'Website for rating energy drinks.',
+        'Whenever a new drink is rated, it is "discovered" and users can earn achievements by rating as many drinks as possible. Ratings are shared with the community and can be used to find the best drinks.',
+        'MonnerDex is also hosted on Azure.'
+      ],
+      link: 'https://monnerdex.com'
     }
   ];
   left: HorizontalPosition = HorizontalPosition.LEFT;
