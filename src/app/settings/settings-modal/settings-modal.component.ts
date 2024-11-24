@@ -1,6 +1,9 @@
 import { DialogRef } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
 import { Background } from '../../shared/models/background.model';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../store/state/app.state';
+import { SetBackground } from '../../store/actions/layout.actions';
 
 @Component({
   selector: 'app-settings-modal',
@@ -18,10 +21,16 @@ export class SettingsModalComponent {
 
   activeBackground: Background = this.backgrounds[0];
 
-  constructor(public dialogRef: DialogRef<string>) {}
+  constructor(public dialogRef: DialogRef<string>, private store: Store<AppState>) {}
 
   setActiveBackground(background: Background): void {
     this.activeBackground = background;
+  }
+
+  confirmBackground(): void {
+    this.store.dispatch(SetBackground({ background: this.activeBackground }));
+
+    this.close();
   }
 
   close(): void {

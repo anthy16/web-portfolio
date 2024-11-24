@@ -1,4 +1,14 @@
 <div class="app">
+  <!-- Background -->
+  <div
+    *ngIf="background$ | async as background"
+    class="app__background"
+    [ngStyle]="{
+      'background-image': 'url(' + background.url + ')'
+    }"
+  ></div>
+
+  <!-- Main content -->
   <div class="app__container">
     <app-header [route]="route"></app-header>
     <router-outlet *ngIf="!loading; else displayLoader"></router-outlet>
